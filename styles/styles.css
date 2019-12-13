@@ -1,7 +1,7 @@
 
 body {
-    margin: 5px;
-    padding: 5px;
+    margin: 3px;
+    padding: 3px;
    
   }
   
@@ -42,6 +42,9 @@ body {
         align-items: center;
         border-radius: 10%;
         margin: 2px;
+        margin-left: 2px;
+        margin-right: 1px;
+        background-color: rgba(145, 47, 47, 0.301);
 
     }
    
@@ -93,16 +96,11 @@ body {
   @media screen and (max-width:740px) {
       .container {
           display: flex;
-          flex: 1fr 1fr 1fr;
-          grid-template-areas: 
-          "header"
-          "sidebar content content"
-          "photo1 photo 1 photo1"
-          "footer  footer  footer";
-          ;
+          flex: 1fr 2fr 1fr;
           flex-direction: column;
-          font-size: small;
+          font-size: 20px;  
           text-align: center;
-          flex-grow: 1 1;
+          flex-shrink: 20px;
+
       }
   }
