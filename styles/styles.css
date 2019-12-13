@@ -7,9 +7,20 @@ body {
   
   .sidebar {
     grid-area: sidebar;
-    background-color: blueviolet;
+    color: black;
+    font-size: large;
+    background-color: gray;
+    padding: 5px;
   }
-  
+  .dp {
+      border-radius: 10%;
+      margin: 25px;
+      height: 200px;
+  }
+  .sidebar:hover {
+      transition: all ease-in-out 100ms;
+      filter:grayscale(.3)
+  }
   .content {
     grid-area: content;
     position: relative;
@@ -22,6 +33,18 @@ body {
     background-color: red;
     text-align: left;
     }
+
+    .photo1 {
+        border-radius: 10%;
+        grid-area: photo1;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        border-radius: 10%;
+        margin: 2px;
+
+    }
+   
     .social {
       grid-area: social;
       background-color: brown;
@@ -55,6 +78,7 @@ body {
       "header  header  header"
           "sidebar content content"
           "social social social"
+          "photo1 photo1 photo1"
           "footer  footer  footer";
           
       }
@@ -66,14 +90,19 @@ body {
     border-radius: 5px;
   }
   
-  @media screen and (max-width:700px) {
+  @media screen and (max-width:740px) {
       .container {
-          display: grid;
-          grid-template-columns: 1fr 2fr 1fr;
+          display: flex;
+          flex: 1fr 1fr 1fr;
           grid-template-areas: 
           "header"
           "sidebar content content"
+          "photo1 photo 1 photo1"
           "footer  footer  footer";
           ;
+          flex-direction: column;
+          font-size: small;
+          text-align: center;
+          flex-grow: 1 1;
       }
   }
