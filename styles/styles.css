@@ -4,14 +4,17 @@ body {
     padding: 3px;
    
   }
-  
   .sidebar {
     grid-area: sidebar;
-    color: black;
     font-size: large;
-    background-color: gray;
     padding: 5px;
+    align-items: left;
+    align-self: flex-start;
+    text-transform: capitalize;
+    background-color: gray;
+    
   }
+
   .dp {
       border-radius: 10%;
       margin: 25px;
@@ -25,7 +28,16 @@ body {
     grid-area: content;
     position: relative;
     grid-column: span 2;
-    background-color: black;
+
+  }
+  .content.bg {
+    background-image: url(https://fossbytes.com/wp-content/uploads/2019/04/Microsoft-bosque-programming-language.jpg);
+    background-size: cover;
+  }
+  .content-text {
+    justify-content: center;
+    align-content: center;
+    text-justify: newspaper;
   }
   
   .header {
@@ -42,9 +54,8 @@ body {
         align-items: center;
         border-radius: 10%;
         margin: 2px;
-        margin-left: 2px;
-        margin-right: 1px;
-
+        padding: 2px;
+        align-content: center;
     }
    
     .social {
@@ -79,32 +90,35 @@ body {
           grid-template-areas:
       "header  header  header"
           "sidebar content content"
-          "social social social"
           "photo1 photo1 photo1"
+          "social social social" 
           "footer  footer  footer";
           
       }
   
   
   .box {
-    
-    color: #fff;
+    color: black;
     border-radius: 5px;
   }
   
-  @media screen and (max-width:740px) {
+  @media screen and (max-width:640px) {
       .container {
           display: flex;
           justify-content: space-between;
           flex-direction: column;
           font-size: 20px;  
           text-align: center;
+          align-self: center;
           flex-wrap: nowrap;
           align-content: center;
+          padding: 15px;
+          margin: 5px;
         }
         .sidebar {
            margin-bottom: 10px;
            margin-top: 10px;
+           align-self: center;
         }
 
   }
