@@ -26,18 +26,46 @@ body {
   }
   .content {
     grid-area: content;
-    position: relative;
     grid-column: span 2;
 
   }
   .content.bg {
     background-image: url(https://fossbytes.com/wp-content/uploads/2019/04/Microsoft-bosque-programming-language.jpg);
     background-size: cover;
+    background-blend-mode: multiply;
   }
   .content-text {
+    text-align: center;
+    color: white;
+    justify-items: center;
+    background-color: rgba(165, 42, 42, 0.432);
     justify-content: center;
-    align-content: center;
-    text-justify: newspaper;
+    padding: 5 px;
+    margin: 60px;  
+  }
+  .content-des {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    background: fixed;
+    
+    text-align: center;
+  }
+  .btn {
+    background-color: transparent;
+    align-items: center;
+    font-size: 30px;
+    color: red;
+    float: right;
+    margin: 10px;
+    border-radius: 10px;
+    text-shadow: 0 0 15px aliceblue;
+  }
+  .btn:hover {
+    filter: drop-shadow(5);
+    transition: all ease-in 100ms;
+    color: rgba(255, 255, 255, 0.527);
+    cursor: grabbing;
   }
   
   .header {
@@ -74,7 +102,8 @@ body {
   .footer {
     grid-area: footer;
     text-align: center;
-    background-color: gray;
+    background-color: rgba(248, 8, 8, 0.418);
+    color: white;
     padding: 20px;
     margin: 10px;
     justify-content: center;
@@ -85,10 +114,10 @@ body {
   .container {
           display: grid;
           height: 100vh;
-      grid-gap: 20px;
-          grid-template-columns: 1fr 2fr 1fr;
+      grid-gap: 15px;
+          grid-template-columns: 1fr 3fr 1fr;
           grid-template-areas:
-      "header  header  header"
+          "header  header  header"
           "sidebar content content"
           "photo1 photo1 photo1"
           "social social social" 
@@ -97,9 +126,14 @@ body {
       }
   
   
-  .box {
-    color: black;
-    border-radius: 5px;
+  .brdr {
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 50%;
+    
+  }
+  .brdr-ft {
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 50%;
   }
   
   @media screen and (max-width:640px) {
