@@ -108,7 +108,7 @@ body {
 .display-nav-mob {
   float: right;
 }
-.display-nav-mob.i  {
+.display-nav-mob i{
   line-height: 100px;
    
 }
@@ -253,7 +253,7 @@ body {
   right: 40px;
   
 }
-#chk:checked ~.nav-mob i {
+#ck:checked ~ .nav-mob  {
   right: 0;
 }
   }
