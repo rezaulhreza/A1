@@ -1,37 +1,17 @@
 
 body {
     margin: 3px;
-    padding: 3px;
    
   }
-  .side {
-    grid-area: side;
-    font-size: large;
-    text-transform: capitalize;
-    background-color: gray;
-    
-  }
-
-  .dp {
-      border-radius: 10px;
-      padding: 35px;
-      margin: 0;
-      height: 200px;
-  }
-  .side:hover {
-      transition: all ease-in-out 100ms;
-      filter:grayscale(.3)
-  }
+  
+  
   .content {
     grid-area: content;
-    grid-column: span 2;
+    grid-column: span 3;
+    background: #ffee58;
 
   }
-  .content.bg {
-    background-image: url(https://fossbytes.com/wp-content/uploads/2019/04/Microsoft-bosque-programming-language.jpg);
-    background-size: cover;
-    background-blend-mode: multiply;
-  }
+  
   .content-text {
     text-align: center;
     color: white;
@@ -39,20 +19,25 @@ body {
     background-color: rgba(165, 42, 42, 0.432);
     justify-content: center;
     padding: 5 px;
-    margin: 60px;  
+    margin: 0px;  
   }
-  .content-des {
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bolder;
-    background-color: teal;    
-    text-align: center;
-  }
+ .content-img img {
+   display: grid;
+   place-items: center center;
+   clip-path: circle(25%);
+  
+ }
+ .oneicon {
+   color: #ffee58;
+   display: grid;
+   place-items: center;
+
+ }
   .btn {
     background-color: transparent;
-    align-items: center;
+   
     font-size: 30px;
-    color: red;
+    color: black;
     float: right;
     margin: 10px;
     border-radius: 10px;
@@ -99,33 +84,8 @@ body {
   padding: 0 10px;
   transition: .5s;
 }
-.display-nav-mob,.hide-nav-mob {
-  transition: .5s;
-  font-size: 25px;
-  cursor: pointer;
-   display: none;
-}
-.display-nav-mob {
-  float: right;
-}
-.display-nav-mob i  {
 
-  line-height: 100px;
-}
-
-.nav-mob a:hover, 
-.display-nav-mob:hover, 
-.hide-nav-mob:hover {
-  color: #9e9e9e;
-}
-
-#ck {
-  position: absolute;
-  visibility: hidden;
-  z-index: -1111;
-}
-
-    .whatido {
+    .whatido{
       text-align: center;
       grid-area: whatido;
       text-shadow: 1px 0 5px gray;
@@ -146,15 +106,14 @@ body {
       width: auto;
       height: 50px;
     }
-
+   
     .brdr {
-      background-color: gray;
-      
-      box-shadow: 2px 2px 5px black;
-      grid-area: brdr;
-      padding: 10px;
-      margin: 10px;
-      height: 170px;
+      background: #ff6b6c;
+  margin-bottom: -10vw;
+  position: relative;
+  z-index: 10;
+  grid-area: brdr;
+  
     
     }
    
@@ -183,14 +142,15 @@ body {
   
   
   .contnr {
+    background-color: red;
           display: grid;
           height: 100vh;
       grid-gap: 12px;
-          grid-template-columns: 1fr 3fr 1fr;
+          grid-template-columns: 1fr 1fr 0fr;
           grid-template-areas:
           "header  header  header"
-          "side content content"
-          "null whatido whatido"
+          "content content content"
+          "whatido whatido whatido"
           "whatdes whatdes whatdes"
           "social social social"
           "footer footer footer"
@@ -207,11 +167,10 @@ body {
       .contnr {
         display: grid;
           height: 100vh;
-      grid-gap: 10px;
+      grid-gap: 5px;
           grid-template-columns: 1fr 2fr 1fr;
           grid-template-areas:
           "header  header  header"
-          "side side side"
           "content content content"
           "whatido whatido whatido"
           "whatdes whatdes whatdes"
@@ -221,41 +180,6 @@ body {
           
           
         }
-        .side {
-           margin-bottom: 10px;
-           margin-top: 10px;
-           align-self: center;
-           align-content: center;
-        }
-
-.display-nav-mob, .hide-nav-mob {
-  display: block;
-}
-.nav-mob {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: gray;
-  top: 0;
-  left: 0;
-  text-align: center;
-  padding: 75px 0;
-  line-height: normal;
-  transition: .7s;
-}
-.nav-mob a {
-  display: block;
-  padding: 15px;
-}
-.hide-nav-mob {
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  
-}
- #ck:checked ~ .nav-mob {
-  right: 5px;
-}
 
   }
 
