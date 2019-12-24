@@ -1,6 +1,7 @@
 
 body {
-    margin: 3px;
+    margin: 0px;
+    padding: 0;
    
   }
   
@@ -9,31 +10,30 @@ body {
     grid-area: content;
     grid-column: span 3;
     background: #ffee58;
+    height: auto;
 
   }
   
   .content-text {
     text-align: center;
     color: black;
-    position: relative;
-    padding: 2rem 3rem;
-    margin: 4rem 3rem;
-    padding-left: 5rem;
-    float: right; 
+    
+   
+    
+     
   }
  .content-img img {
    display: grid;
-   
+   float: right;
+   padding: 65px;
+   margin: -5px;
    place-items: center;
-   clip-path: circle(25%);
+   clip-path: polygon(10px 250px, 400px 450px, 200px 0, 0 0);
+   
+   
   
  }
- .oneicon {
-   color: #ffee58;
-   display: grid;
-   place-items: center;
-
- }
+ 
   .btn {
     background-color: transparent;
    
@@ -92,18 +92,22 @@ body {
   position: relative;
   z-index: 10;
   grid-area: brdr;
+  }
   
     
     }
-    .land-text {
+    .land-text p {
       display: grid;
-      grid-area: info;
       place-items: center;
       color: black;
-      grid-column: span 2;
+      float: right;
+      font-size: larger;
+     text-align: center;
+     padding-left: 40px;
+    padding-right: 20px;
       margin-left: 20px;
       font-size: larger;
-      text-shadow: 1px 0px 3px;
+      text-shadow: 5px 0px 5px black;
     }
    
     .social {
@@ -120,7 +124,6 @@ body {
   .footer {
     grid-area: footer;
     text-align: center;
-   clip-path: polygon(0, 0, 100%);
     box-shadow:5px 2 2px rgba(0, 0, 0, 0.534);
     color: white;
     margin: 20px;
@@ -193,5 +196,9 @@ body {
     flex-wrap: nowrap;
     color: black;
     background-color: coral
+  }
+
+  .brdr img {
+    
   }
   
