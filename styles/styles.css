@@ -26,14 +26,14 @@ body {
    display: grid;
    float: right;
    padding: 65px;
-   margin: -5px;
+   margin: 20px;
    place-items: center;
    clip-path: polygon(10px 250px, 400px 450px, 200px 0, 0 0);
    
    
   
  }
- 
+ /*for button*/
   .btn {
     background-color: transparent;
    
@@ -96,7 +96,7 @@ body {
   
     
     }
-    .land-text p {
+    .land-text h1 p{
       display: grid;
       place-items: center;
       color: black;
@@ -105,7 +105,7 @@ body {
      text-align: center;
      padding-left: 40px;
     padding-right: 20px;
-      margin-left: 20px;
+      margin: -5px 15px 25px  30px;
       font-size: larger;
       text-shadow: 5px 0px 5px black;
     }
@@ -136,7 +136,7 @@ body {
    
           display: grid;
           height: 100vh;
-      grid-gap: 12px;
+      grid-gap: 5px;
           grid-template-columns: 1fr 1fr 0fr;
           grid-template-areas:
           "header  header  header"
@@ -148,21 +148,15 @@ body {
       }
   
   
-  @media screen and (max-width:700px) {
-    .content {
-      grid-column: span 3;
-
-    }
+  @media screen and (max-width:1024px) {
+    
       .contnr {
         display: grid;
-          height: 100vh;
-      grid-gap: 5px;
+       grid-gap: 0px;
           grid-template-columns: 1fr 2fr 1fr;
           grid-template-areas:
           "header  header  header"
           "content content content"
-          "social social social"
-          "footer footer footer"
           "brdr brdr brdr"
           
           
