@@ -56,7 +56,6 @@ body {
     background-color: black;
     padding: 0 20px;
     color: white;
-    height: 100px;
 
     
     }
@@ -136,24 +135,22 @@ body {
    
           display: grid;
           height: 100vh;
-      grid-gap: 5px;
-          grid-template-columns: 1fr 1fr 0fr;
+      grid-gap: 0pxpx;
+          grid-template-columns: 1fr 1fr 1fr;
           grid-template-areas:
           "header  header  header"
           "content content content"
-          "social social social"
-          "footer footer footer"
           "brdr brdr brdr";
           
       }
   
   
-  @media screen and (max-width:1024px) {
+  @media screen and (max-width:780px) {
     
       .contnr {
         display: grid;
        grid-gap: 0px;
-          grid-template-columns: 1fr 2fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
           grid-template-areas:
           "header  header  header"
           "content content content"
@@ -162,6 +159,11 @@ body {
           
         }
 
+  }
+  @media screen and (min-width:1000px) {
+    .header {
+      height: auto;
+    }
   }
 
   /*************
