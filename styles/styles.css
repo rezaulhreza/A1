@@ -58,6 +58,12 @@ body {
       text-transform: capitalize;
     
     }
+    /***for navigation bar with the hamburger*/
+    .navigation {
+      text-align: right;
+      line-height: 80px;
+      height: 80px;
+  }
 
 
     .brdr {
