@@ -29,7 +29,7 @@ body {
  }
  .intro {
    color: black;
-   text-shadow: 3px 5px 10px white;
+   text-shadow: 3px 5px 10px white, 5px 0 5px black;
    font-size: 30px;
    text-transform: uppercase;
  }
