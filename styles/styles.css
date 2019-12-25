@@ -14,14 +14,15 @@ body {
  .content-img img {
    display: grid;
    float: right;
-   padding: 65px;
    margin: 20px;
    place-items: center;
    clip-path: polygon(10px 250px, 400px 450px, 200px 0, 0 0); 
  }
  .des {
+   
    color: white;
    text-align: center;
+   letter-spacing: 5px;
    font-size: 50px;
    padding-top: 65px;
    font-family: Arial, Helvetica, sans-serif;
@@ -30,32 +31,35 @@ body {
    color: black;
    text-shadow: 3px 5px 10px white;
    font-size: 30px;
-   
+   text-transform: uppercase;
  }
  .hello {
    color: #6e6e6e;
    text-shadow:  5px 0 5px aliceblue;
+   text-transform: uppercase;
  }
  .name {
    color: teal;
-   text-shadow: 5px 0 5px black;
+   text-shadow: 5px 0 5px black, 6px 0 0 gray;
    
  }
  /*for button*/
   .des button {
     background-color: transparent;
     font-size: 30px;
-    color: black;
-   
+    color: white;
     margin: 10px;
     border-radius: 10px;
-    text-shadow: 0 0 15px aliceblue;
+    text-shadow: 5px 0 5px black;
   }
   .des button:hover {
-    filter: grayscale(1);
+    background: transparent;
     transition: all ease-in 100ms;
-    color: rgba(255, 255, 255, 0.527);
+    color: black;
+    text-shadow: 5px 0 5px white;
     cursor: grabbing;
+    box-shadow: 0 0 5px brown, 0 0 20px blue, 0 0 50px red;
+    transition-delay: .2s;
   }
   
   .header {
