@@ -114,9 +114,8 @@ label {
 
     .brdr {
       background: #ff6b6c;
-  margin-bottom: -10vw;
   position: relative;
-  z-index: 10;
+  
   grid-area: brdr;
     }
    
@@ -146,7 +145,7 @@ label {
    
           display: grid;
           height: 100vh;
-      grid-gap: 0pxpx;
+      grid-gap: 2px;
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-areas:
           "header  header  header"
