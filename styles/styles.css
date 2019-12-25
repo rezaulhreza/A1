@@ -42,17 +42,17 @@ body {
    
  }
  /*for button*/
-  .btn {
+  .des button {
     background-color: transparent;
     font-size: 30px;
     color: black;
-    float: right;
+   
     margin: 10px;
     border-radius: 10px;
     text-shadow: 0 0 15px aliceblue;
   }
-  .btn:hover {
-    filter: drop-shadow(5);
+  .des button:hover {
+    filter: grayscale(1);
     transition: all ease-in 100ms;
     color: rgba(255, 255, 255, 0.527);
     cursor: grabbing;
