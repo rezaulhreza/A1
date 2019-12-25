@@ -152,7 +152,7 @@ label {
       }
   
   
-  @media screen and (max-width:780px) {
+  @media only screen and (max-width:700px) {
     
       .contnr {
         display: grid;
@@ -165,18 +165,27 @@ label {
           
           
         }
-.land-text h1 p {
-  padding-left: 45px;
-  padding-bottom: 45px;
-  text-emphasis: center;
-}
-       
-    
-  }
-  @media screen and (min-width:1000px) {
-    .header {
-      height: auto;
-    }
+        label {
+          display: block;
+          cursor: pointer;
+          width: 15px;
+          float: right;
+      }
+      .navbar {
+          text-align: center;
+          width: 100%;
+          background-color: gray;
+          display: none;
+          transition: .7s;
+      }
+      .navbar a {
+          clear: right;
+          display: block;
+          margin: 0;
+      }
+      #hamburger:checked + .navbar {
+          display: block;
+      }
   }
 
   /*************
