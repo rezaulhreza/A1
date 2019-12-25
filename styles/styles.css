@@ -8,19 +8,8 @@ body {
   
   .content {
     grid-area: content;
-    grid-column: span 3;
     background: #ffee58;
     height: auto;
-
-  }
-  
-  .content-text {
-    text-align: center;
-    color: black;
-    
-   
-    
-     
   }
  .content-img img {
    display: grid;
@@ -36,7 +25,6 @@ body {
  /*for button*/
   .btn {
     background-color: transparent;
-   
     font-size: 30px;
     color: black;
     float: right;
@@ -71,19 +59,6 @@ body {
     
     }
 
-.nav-mob {
-  float: right;
-  line-height: 100px;
-  text-transform: capitalize;
-  
-
-}
-.nav-mob a {
-  color: white;
-  text-decoration: none;
-  padding: 0 10px;
-  transition: .5s;
-}
 
     .brdr {
       background: #ff6b6c;
@@ -102,8 +77,9 @@ body {
       float: right;
       font-size: larger;
      text-align: center;
-     padding-left: 40px;
-    padding-right: 20px;
+    
+     padding-left: 45px;
+
       margin: -5px 15px 25px  30px;
       font-size: larger;
       text-shadow: 5px 0px 5px black;
@@ -158,7 +134,12 @@ body {
           
           
         }
-
+.land-text h1 p {
+  padding-left: 45px;
+  padding-bottom: 45px;
+}
+       
+    
   }
   @media screen and (min-width:1000px) {
     .header {
@@ -187,14 +168,16 @@ body {
   /******for cv page*/
   .cv-position {
     text-align: center;
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     flex-wrap: nowrap;
     color: black;
     background-color: coral
   }
-
-  .brdr img {
-    
+  input:hover {
+    color: blue;
+    transition: ease-in 200ms;
   }
+
+  
   
