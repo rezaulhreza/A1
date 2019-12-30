@@ -228,7 +228,7 @@ label {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas:
       "header  header  header"
-      "contact contact contact"
+      "mail contact content"
       "brdr brdr brdr";
  
 
@@ -239,6 +239,7 @@ label {
     grid-area: contact;
     padding: 50px 0;
     display: grid;
+    grid-column: span 3;
   }
 
   .contact-area h1 {
@@ -281,25 +282,28 @@ label {
 }
  .contact-btn {
 float: right;
-background-color: transparent;
+background-color: rgba(17, 17, 17, 0.808);
 font-size: 20px;
 padding: 10px;
-color: black;
+color: white;
 margin: 10px;
 border-radius: 20px;
-text-shadow: 5px 0 5px white;
+text-shadow: 0px 0 5px white;
 outline: none;
 }
 .contact-btn:hover {
-background: transparent;
+background: rgba(128, 128, 128, 0.582);
 transition: all ease-in 150ms;
-color: rgb(0, 89, 172);
-text-shadow: 5px 0 5px white;
+color: black;
+text-shadow: 0px 2px 5px white;
 cursor: pointer;
-box-shadow: 5px 0 0 rgba(128, 128, 128, 0.486), 0 0 15px rgba(90, 255, 68, 0.308), 0 0 25px rgb(255, 102, 0);
+box-shadow: 5px 0 0 rgba(128, 128, 128, 0.486), 0 0 15px rgba(90, 255, 68, 0.308), 0 0 25px rgb(247, 0, 255);
 transition-delay: .1s;
 }
-
+.mail {
+  grid-area: mail;
+  background-color: #ff6b6c;
+}
   
   /******for cv page*/
   
