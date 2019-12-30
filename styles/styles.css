@@ -129,8 +129,7 @@ label {
       grid-area: social;
       color: white;
      text-align: center;
-     padding: 10px;
-     margin: 15px;
+     
     }
     .social i {
       color: white;
@@ -241,14 +240,13 @@ label {
     padding: 50px 0;
     display: grid;
   }
-.contact-back {
-  border: solid;
-  border-radius: 10px;
-  padding: 60px;
-  border-width: 60px;
-}
+
   .contact-area h1 {
     text-align: center;
+    border-bottom:  4px solid #6e6e6e5d;
+    border-radius: 200px;
+    margin: 5px 15px 25px 30px;
+    
   }
   .field {
     max-width: 700px;
@@ -265,16 +263,42 @@ label {
     color: white;
     transition: .5s;
     outline: none;
+    border-radius: 10px;
     background: rgba(17, 17, 17, 0.808);
     
   }
+  
   .field-text:hover {
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 10px 0 0 rgba(128, 128, 128, 0.205), 0 0 0 15px rgba(68, 255, 109, 0.205), 0 0 25px rgb(255, 0, 0);
   }
  .field-text:focus {
    background-color: rgba(255, 5, 5, 0.699);
  }
+ .textarea.field-text {
+  resize: none;
+  height: 150px;
+}
+ .contact-btn {
+float: right;
+background-color: transparent;
+font-size: 20px;
+padding: 10px;
+color: black;
+margin: 10px;
+border-radius: 20px;
+text-shadow: 5px 0 5px white;
+outline: none;
+}
+.contact-btn:hover {
+background: transparent;
+transition: all ease-in 150ms;
+color: rgb(0, 89, 172);
+text-shadow: 5px 0 5px white;
+cursor: pointer;
+box-shadow: 5px 0 0 rgba(128, 128, 128, 0.486), 0 0 15px rgba(90, 255, 68, 0.308), 0 0 25px rgb(255, 102, 0);
+transition-delay: .1s;
+}
 
   
   /******for cv page*/
