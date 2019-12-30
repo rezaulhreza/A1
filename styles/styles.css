@@ -196,12 +196,7 @@ label {
   height: auto;
 }
 .header {
-  padding: 0;
-<<<<<<< HEAD
-  
-=======
-Position: fixed;  
->>>>>>> 3db9d9d87b1986af083b3f15447baae0a47ea4cc
+  padding: 0; 
 }
 
       .navbar {
