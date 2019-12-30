@@ -243,24 +243,16 @@ label {
     text-align: center;
   }
 
-  .about h1 {
-    text-align: center;
-    border-bottom:  4px solid #6e6e6e5d;
-    border-radius: 200px;
-    margin: 70px;
-    text-transform: capitalize;
-  }
-  .about article {
-    margin: 50px 20px;
-    padding-bottom: 20px;
+  
 
-  }
   .contact-area {
     background-color: #ffee58;
     grid-area: contact;
     padding: 50px 0;
     display: grid;
-    grid-column: span 3;
+    
+    background-origin: border-box;
+    box-sizing: 0 0 5px solid black;
     
   }
 
@@ -323,10 +315,34 @@ box-shadow: 5px 0 0 rgba(128, 128, 128, 0.486), 0 0 15px rgba(90, 255, 68, 0.308
 transition-delay: .1s;
 }
 
-}
+
 
   
   /******for cv page*/
   
-  
-  
+  .cv-container {
+    
+   
+      display: grid;
+      height: 100vh;
+  grid-gap: 2px;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas:
+      "header  header  header"
+      "photo details details"
+      "brdr brdr brdr";
+  }
+  .photo {
+    background-color: rgba(31, 21, 21, 0.315);
+    margin: 20px;
+    grid-area: photo;
+    border-radius:20px;
+    text-align: center;
+    box-shadow: 5px 0 0 black, 0 5px 0 teal, 0 0 2px red;
+  }
+  .photo img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid black;
+  }
+
