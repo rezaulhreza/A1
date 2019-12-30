@@ -83,7 +83,7 @@ body {
     .title {
       float: left;
       color: white;
-      height: 100px;
+      
       padding: 0 15px;    
     }
     /***for navigation bar with the hamburger*/
@@ -220,7 +220,16 @@ label {
 
   /*************
   for contact page*/
-  
+  .contact-area {
+    background: #ffee58;
+    background-size: cover;
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+  }
+  .contact-area h1 {
+    text-align: center;
+  }
   
   /******for cv page*/
   
