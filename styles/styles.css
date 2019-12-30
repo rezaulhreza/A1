@@ -169,6 +169,7 @@ label {
     .content {
       font-size: 15px;
     }
+
     
       .contnr {
         display: grid;
@@ -192,6 +193,7 @@ label {
 }
 .header {
   padding: 0;
+Position: fixed;  
 }
 
       .navbar {
