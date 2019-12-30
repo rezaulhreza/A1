@@ -12,6 +12,10 @@ body {
     color: white;
     padding: 20px;
   }
+  .social i:hover {
+    color: rgba(212, 219, 255, 0.63);
+    transition: all ease-in-out 1s;  
+  }
   .content {
     grid-area: content;
     background: #ffee58;
@@ -192,6 +196,7 @@ label {
 }
 .header {
   padding: 0;
+  
 }
 
       .navbar {
@@ -215,35 +220,9 @@ label {
 
   /*************
   for contact page*/
-  .contact-area {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    background-color: green;
-    margin: 20px;
-    height: 40vh;
-  }
-  .send {
-    background-color: transparent;
-    margin: 10px;
-    color: white;
-    font-size: 20px;
-    border-radius: 30px;
-  }
+  
+  
   /******for cv page*/
-  .cv-position {
-    text-align: center;
-    display: flexbox;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    color: black;
-    background-color: coral
-  }
-  input:hover {
-    color: blue;
-    transition: ease-in 200ms;
-  }
-
+  
   
   
