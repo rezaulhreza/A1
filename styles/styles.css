@@ -67,7 +67,7 @@ body {
     color: black;
     text-shadow: 5px 0 5px white;
     cursor: grabbing;
-    box-shadow: 0 0 5px brown, 0 0 20px blue, 0 0 50px red;
+    box-shadow: 0 0 5px brown, 0 0 20px blue, 0 0 45px red;
     transition-delay: .2s;
   }
   
@@ -173,6 +173,7 @@ label {
     .content {
       font-size: 15px;
     }
+
     
       .contnr {
         display: grid;
@@ -196,7 +197,11 @@ label {
 }
 .header {
   padding: 0;
+<<<<<<< HEAD
   
+=======
+Position: fixed;  
+>>>>>>> 3db9d9d87b1986af083b3f15447baae0a47ea4cc
 }
 
       .navbar {
