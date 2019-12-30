@@ -8,14 +8,7 @@ body {
    
   }
   
-  .social i {
-    color: white;
-    padding: 20px;
-  }
-  .social i:hover {
-    color: rgba(212, 219, 255, 0.63);
-    transition: all ease-in-out 1s;  
-  }
+  
   .content {
     grid-area: content;
     background: #ffee58;
@@ -127,20 +120,26 @@ label {
 
 
     .brdr {
-      background: #ff6b6c;
-  position: relative;
-  
-  grid-area: brdr;
+      background: #6b81ff;  
+      grid-area: brdr;
     }
    
     .social {
       grid-area: social;
-     
       color: white;
-      height: 100px;
      text-align: center;
      padding: 10px;
-     margin: 25px;
+     margin: 15px;
+    }
+    .social i {
+      color: white;
+      padding: 20px;
+      border-right: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+    .social i:hover {
+      color: rgba(212, 219, 255, 0.63);
+      transition: all ease-in-out 1s;  
     }
 
   
@@ -241,10 +240,27 @@ label {
     padding: 50px 0;
     display: grid;
   }
-  
+
   .contact-area h1 {
     text-align: center;
   }
+  .field {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 15px;
+    overflow: hidden;
+  }
+  .field-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 40px 0;
+    
+    color: #000000;
+    
+  }
+ 
+
   
   /******for cv page*/
   
