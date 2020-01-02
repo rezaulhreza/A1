@@ -1,17 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap');
 
 
+:root {
+  --content: #ffee58;
+  --header: black;
+  --footer:  #6b81ff;
+ 
+}
+
 body {
     margin: 0px;
     padding: 0;
     font-family: 'Roboto Slab', sans-serif;
-   
   }
   
   
   .content {
     grid-area: content;
-    background: #ffee58;
+    background: var(--content);
     height: auto;
   }
  .content-img img {
@@ -20,6 +26,11 @@ body {
    margin: 20px;
    place-items: center;
    clip-path: polygon(10px 250px, 400px 450px, 200px 0, 0 0); 
+ }
+ .content-img img:hover {
+   filter: grayscale(1);
+   transition: all ease-in-out 1s;
+   clip-path: circle(40%);
  }
  .des {
    
@@ -67,7 +78,7 @@ body {
   
   .header {
     grid-area: header;
-    background-color: black;
+    background: var(--header);
     padding: 0 20px;
     color: white;
     font-family: Montserrat, sans-serif;
@@ -99,7 +110,10 @@ body {
 }
 .navbar a:hover {
   color: green;
-  transition: all ease-in 1s ;
+  transition: all ease-in-out 1s ;
+  border: 1px white dashed;
+  border-radius: 10px;
+  text-shadow: 20px 3px 7px white;
 }
 .navbar .active {
   color: red;
@@ -121,7 +135,7 @@ label {
 
 
     .brdr {
-      background: #6b81ff;  
+      background: var(--footer);  
       grid-area: brdr;
     }
    
@@ -169,9 +183,7 @@ label {
   
   
   @media only screen and (max-width:700px) {
-    .content {
-      font-size: 15px;
-    }
+    
 
     
       .contnr {
@@ -329,7 +341,7 @@ transition-delay: .1s;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas:
       "header  header  header"
-      "photo details details"
+      "photo details skills"
       "brdr brdr brdr";
   }
   .photo {
@@ -341,8 +353,30 @@ transition-delay: .1s;
     box-shadow: 5px 0 0 black, 0 5px 0 teal, 0 0 2px red;
   }
   .photo img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+   clip-path: circle(40%);
     border-bottom: 1px solid black;
-  }
+    width: 350px;
+    height: 350px;
 
+  }
+.details {
+  grid-area: details;
+  background-color: #ffee58;
+  text-align: center;
+  float: right;
+  border-radius: 20px;
+  margin: 20px;
+}
+.details .info span {
+  border-bottom: 2px solid gray;
+  
+  
+ 
+}
+.skills {
+  background-color: #ff6b6c;
+  text-align: center;
+  grid-area: skills;
+  border-radius: 20px;
+  margin: 20px;
+}
