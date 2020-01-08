@@ -29,7 +29,7 @@ body {
  }
  .content-img img:hover {
    filter: grayscale(1);
-   transition: all ease-in-out 1s;
+   transition: all ease-in-out 2s;
    clip-path: circle(40%);
  }
  .des {
@@ -341,42 +341,67 @@ transition-delay: .1s;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas:
       "header  header  header"
-      "photo details skills"
+      "edu details details"
+      
+
       "brdr brdr brdr";
   }
-  .photo {
-    background-color: rgba(31, 21, 21, 0.315);
-    margin: 20px;
-    grid-area: photo;
-    border-radius:20px;
-    text-align: center;
-    box-shadow: 5px 0 0 black, 0 5px 0 teal, 0 0 2px red;
-  }
-  .photo img {
-   clip-path: circle(40%);
-    border-bottom: 1px solid black;
-    width: 350px;
-    height: 350px;
-
-  }
-.details {
-  grid-area: details;
-  background-color: #ffee58;
-  text-align: center;
-  float: right;
+  .education {
+    text-transform: capitalize;
+    grid-area: edu;
+    border-right: 1px solid gray;
+    padding: 20px;
+    height: 100%;
   border-radius: 20px;
-  margin: 20px;
+  margin: 5px;
+  text-align: center;
+  
+  }
+  
+  
+  .education h1 {
+    text-shadow: 5px 1px 5px rgb(46, 43, 43);
+  }
+  .education p {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+.details {
+  
+  height: 100%;
+  grid-column: span 2;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  
+  
+  
 }
-.details .info span {
+.details .info  {
+  text-shadow: 2px 1px 5px rgb(158, 6, 6);
+  background-color: rgba(236, 11, 11, 0.459);
   border-bottom: 2px solid gray;
-  
-  
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  margin: 7rem;
  
 }
-.skills {
-  background-color: #ff6b6c;
-  text-align: center;
-  grid-area: skills;
-  border-radius: 20px;
-  margin: 20px;
+.details  p {
+  background: rgba(207, 146, 146, 0.219);
+  color: rgb(41, 39, 39);
+
+}
+@media only screen and (max-width: 700px) {
+  .cv-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .education {
+    border-bottom: 1px solid gray;
+    border-right: none;
+    border-radius: 5px;
+  }
 }
