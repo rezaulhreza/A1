@@ -148,22 +148,22 @@ label {
     .social i {
       color: white;
       padding: 20px;
-      border-right: 1px solid white;
-      border-bottom: 1px solid white;
+     
     }
     .social i:hover {
       color: rgba(212, 219, 255, 0.63);
-      transition: all ease-in-out 1s;  
+      transition: all ease-in-out 1s;
+      
     }
 
   
   .footer {
     grid-area: footer;
+    
     text-align: center;
-    box-shadow:5px 2 2px rgba(0, 0, 0, 0.534);
     color: white;
-    margin: 20px;
-   width: auto;
+    padding: 20px;
+   
     
   }
   
@@ -249,7 +249,7 @@ label {
     grid-area: about;
     background: #ff6b6c;
     padding: 50px 0;
-    font-family: Roboto Slab, sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     border: 1px solid gray;
     color: white;
     text-align: center;
@@ -263,8 +263,6 @@ label {
     padding: 50px 0;
     display: grid;
     
-    background-origin: border-box;
-    box-sizing: 0 0 5px solid black;
     
   }
 
@@ -334,9 +332,8 @@ transition-delay: .1s;
   
   .cv-container {
     
-   
+   background: var(--content);
       display: grid;
-      height: 100vh;
   grid-gap: 2px;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas:
@@ -380,20 +377,70 @@ transition-delay: .1s;
   
 }
 .details .info  {
-  text-shadow: 2px 1px 5px rgb(158, 6, 6);
+  box-shadow: 5px -5px 5px black;
+  
   background-color: rgba(236, 11, 11, 0.459);
   border-bottom: 2px solid gray;
   font-size: 20px;
+  
   color: white;
   border-radius: 10px;
   margin: 7rem;
  
 }
 .details  p {
-  background: rgba(207, 146, 146, 0.219);
+  box-shadow: 3px 2px 5px black;
+  background: rgba(163, 163, 163, 0.219);
   color: rgb(41, 39, 39);
+  padding: 20px;
 
 }
+.details a {
+ 
+  text-decoration: none;
+  font-style: italic;
+  text-transform: none;
+  cursor: pointer;
+}
+.details h3 {
+
+}
+.bar {
+  height: 20px;
+  
+  margin: 0 auto 7px;
+  line-height: 20px;
+  font-size: 15px;
+ 
+  color: rgba(27, 27, 26, 0.986);
+
+ border-radius: 100px;
+ height: 40px;
+ text-align: center;
+ 
+ 
+ 
+
+}
+.bar1 {
+  background-color: lightblue;
+  
+}
+.bar2 {
+  background-color: rgb(255, 47, 238);
+
+
+  
+}
+.bar3 {
+  background-color: rgb(38, 117, 143);
+  
+  
+}
+
+
+
+
 @media only screen and (max-width: 700px) {
   .cv-container {
     display: flex;
@@ -405,3 +452,6 @@ transition-delay: .1s;
     border-radius: 5px;
   }
 }
+
+/****for portfolio page*/
+
