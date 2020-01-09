@@ -4,9 +4,8 @@
 :root {
   --content: #ffee58;
   --header: black;
-  --footer:  #6b81ff;
- 
-}
+  --footer:  #6b81ff
+  }
 
 body {
     margin: 0px;
