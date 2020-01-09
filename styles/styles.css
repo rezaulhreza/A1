@@ -330,44 +330,55 @@ transition-delay: .1s;
   /******for cv page*/
   
   .cv-container {
-    
-   background: var(--content);
+  
       display: grid;
   grid-gap: 2px;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas:
       "header  header  header"
       "edu details details"
-      
-
       "brdr brdr brdr";
   }
-  .education {
+  .cv-side {
     text-transform: capitalize;
     grid-area: edu;
-    border-right: 1px solid gray;
+    border-right: 1px dashed gray;
+    background-color: rgba(169, 169, 169, 0.116);
     padding: 20px;
     height: 100%;
-  border-radius: 10px;
+  
   margin: 5px;
   text-align: center;
   
   }
+  .cv-side h1, .cv-contact, .cv-about {
+  border-bottom: 1px gray dotted;
   
-  
-  .education h1 {
-    text-shadow: 5px 1px 5px rgb(46, 43, 43);
   }
-  .education p {
+  .cv-contact, .cv-about {
+    text-transform: none;
+  }
+  .cv-side img {
+    clip-path: circle(40%)
+  }
+  .cv-side img:hover {
+    filter: grayscale(1);
+    transition: all ease-in 300ms;
+  }
+  
+  
+ 
+  .cv-side p {
     font-family: 'Montserrat', sans-serif;
   }
   
 .details {
+  margin: 5px;
   
   height: 100%;
   grid-column: span 2;
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
+ 
   padding: 20px;
   border-radius: 20px;
   text-transform: capitalize;
@@ -376,22 +387,23 @@ transition-delay: .1s;
   
 }
 .details .info  {
-  box-shadow: 5px -5px 5px black;
+  box-shadow: 2px 1px 4px black;
   
-  background-color: rgba(236, 11, 11, 0.459);
-  border-bottom: 2px solid gray;
+  background-color: rgba(163, 163, 163, 0.171);
+
   font-size: 20px;
   
-  color: white;
+  color: black;
   border-radius: 10px;
-  margin: 7rem;
+  
  
 }
 .details  p {
-  box-shadow: 3px 2px 5px black;
-  background: rgba(163, 163, 163, 0.219);
+  
+  background: rgba(207, 207, 207, 0.192);
   color: rgb(41, 39, 39);
   padding: 20px;
+  font-size: 10px;
 
 }
 .details a {
@@ -401,12 +413,23 @@ transition-delay: .1s;
   text-transform: none;
   cursor: pointer;
 }
-.details h3 {
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+.skills p {
+    
+  
+  color: rgb(41, 39, 39);
+  padding: 10px;
+  font-size: 10px;
+}
+
+
 .bar {
   height: 20px;
-  
   margin: 0 auto 7px;
   line-height: 20px;
   font-size: 15px;
@@ -449,6 +472,14 @@ transition-delay: .1s;
     border-bottom: 1px solid gray;
     border-right: none;
     border-radius: 5px;
+  }
+  .cv-side {
+    border-right: none;
+    border-bottom: dotted;
+  }
+  .skills {
+    
+    flex-direction: column;
   }
 }
 
