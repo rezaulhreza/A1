@@ -342,11 +342,7 @@ transition-delay: .1s;
 .contact-details i {
   padding: 10px;
 }
-@media screen and (max-width:700px) {
-  .contact-details{
-    justify-content: center;
-  }
-}
+
 
 
   
