@@ -6,7 +6,7 @@
   --header: black;
   --footer:  #000000;
   }
-
+/*modern-font for body roboto slab and margin is 0 padding as well*/
 body {
     margin: 0px;
     padding: 0;
@@ -59,20 +59,26 @@ body {
    
  }
  /*for button*/
-  .des button {
+  .des button{
+  
     background-color: transparent;
     font-size: 30px;
-    color: white;
+    color: black;
     margin: 10px;
     border-radius: 10px;
     text-shadow: 2px 0 5px rgb(75, 75, 75);
-    outline: none;
+    
     padding: 5px;
   }
+  .des a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
   .des button:hover {
     background: transparent;
-    transition: all ease-in 300ms;
-  
+    transition: all ease-in 100ms;
+  color: white;
     border-radius: 20px;
     border-style: dashed;
     color: rgb(184, 184, 184);
