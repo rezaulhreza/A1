@@ -584,7 +584,7 @@ grid-gap: 2px;
  flex-wrap: nowrap;
  margin: 10px;
 }
-
+/*fro mobile*/
 @media only screen and (min-device-width: 240px) and (max-device-width: 700px){
   .gallery {
     margin: 5px auto auto auto;
@@ -611,14 +611,15 @@ grid-gap: 2px;
   }
   
 }
-  /***fro tablet*/
-@media only screen and (min-device-width: 750px) and (max-device-width: 1024px){
+  /***for tablet*/
+@media only screen and (min-device-width: 750px) and (max-device-width: 1030px){
   .ptfl-container {
     grid-template-columns: none;
     height: 100vh;
     grid-template-areas: "header header header"
     "gallery gallery gallery"
-    "brdr brdr brdr";
+    "brdr brdr brdr"
+    
   }
   .social {
     padding: 0;
