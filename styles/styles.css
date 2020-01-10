@@ -4,7 +4,7 @@
 :root {
   --content: #ffee58;
   --header: black;
-  --footer:  #6b81ff
+  --footer:  #000000;
   }
 
 body {
@@ -16,8 +16,9 @@ body {
   
   .content {
     grid-area: content;
-    background: var(--content);
+    background: black;
     height: auto;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.233);
   }
  .content-img img {
    display: grid;
@@ -40,14 +41,14 @@ body {
    padding-top: 65px;
  }
  .intro {
-   color: black;
-   text-shadow: 3px 5px 10px white, 5px 0 5px black;
+   color: white;
+   text-shadow: 3px 5px 10px gray, 5px 0 5px red;
    font-size: 30px;
    text-transform: uppercase;
  }
  .hello {
-   color: #6e6e6e;
-   text-shadow:  5px 0 5px aliceblue;
+   color: #b1b1b1;
+   text-shadow:  5px 0 5px blue, 10px 1px 4px green;
    text-transform: uppercase;
  }
  .name {
@@ -62,16 +63,17 @@ body {
     color: white;
     margin: 10px;
     border-radius: 10px;
-    text-shadow: 5px 0 5px black;
+    text-shadow: 2px 0 5px rgb(75, 75, 75);
     outline: none;
+    padding: 5px;
   }
   .des button:hover {
     background: transparent;
     transition: all ease-in 100ms;
-    color: black;
-    text-shadow: 5px 0 5px white;
+    color: rgb(184, 184, 184);
+    text-shadow: 5px 0 5px rgb(110, 2, 2);
     cursor: grabbing;
-    box-shadow: 0 0 5px brown, 0 0 20px blue, 0 0 45px red;
+    box-shadow: 0 0 5px brown, 0 0 20px rgb(0, 0, 75), 0 0 35px red;
     transition-delay: .2s;
   }
   
@@ -92,6 +94,7 @@ body {
     }
     /***for navigation bar with the hamburger*/
     .navigation {
+      border-bottom: .5px solid rgba(255, 255, 255, 0.233);
       text-align: right;
       line-height: 80px;
       height: 80px;
@@ -175,7 +178,7 @@ label {
    
           display: grid;
           height: 100vh;
-      grid-gap: 2px;
+      
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-areas:
           "header  header  header"
@@ -585,7 +588,7 @@ grid-gap: 2px;
  margin: 10px;
 }
 /*fro mobile*/
-@media only screen and (min-device-width: 240px) and (max-device-width: 700px){
+@media only screen and (min-device-width: 240px) and (max-device-width: 550px){
   .gallery {
     margin: 5px auto auto auto;
   }
@@ -612,7 +615,7 @@ grid-gap: 2px;
   
 }
   /***for tablet*/
-@media only screen and (min-device-width: 750px) and (max-device-width: 1030px){
+@media only screen and (min-device-width: 551px) and (max-device-width: 1280px){
   .ptfl-container {
     grid-template-columns: none;
     height: 100vh;
