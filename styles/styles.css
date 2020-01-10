@@ -544,7 +544,13 @@ grid-gap: 2px;
   grid-area: gallery;
   margin: 5px;
   padding: 10px;
+ 
+  background-color: #bad8d838;
   
+}
+.gallery h2 {
+  text-align: center;
+  border-bottom: 1px solid gray;
 }
 .gallery img {
   border-radius: 10px;
@@ -579,11 +585,14 @@ grid-gap: 2px;
  margin: 10px;
 }
 
-@media screen and (max-width:700px) {
-  
+@media only screen and (min-device-width: 240px) and (max-device-width: 700px){
+  .gallery {
+    margin: 5px auto auto auto;
+  }
   .gallery img {
-    width: 340px;
-    height: 320;
+    width: 280px;
+    height: 260px;
+    padding: 5px;
   }
   .g1 {
     flex-direction: column;
@@ -602,15 +611,46 @@ grid-gap: 2px;
   }
   
 }
-  
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation : portrait) {
+  /***fro tablet*/
+@media only screen and (min-device-width: 750px) and (max-device-width: 1024px){
   .ptfl-container {
-    display: grid;
+    grid-template-columns: none;
+    height: 100vh;
+    grid-template-areas: "header header header"
+    "gallery gallery gallery"
+    "brdr brdr brdr";
+  }
+  .social {
+    padding: 0;
+    margin: 0;
+  }
+  .gallery {
+  
+  }
+  
+  .gallery img {
+    width: 280px;
+    height: 250px;
+    padding: 2px;
 
     
   }
-}
+  .g1 {
+    flex-direction: row;
 
+  }
+  .g2 {
+    flex-direction: row;
+  }
+  .g3 {
+    flex-direction: row;
+  }
+  .g1, .g2, .g3 {
+    margin: 1px;
+
+  }
+  
+}
 
 
 
