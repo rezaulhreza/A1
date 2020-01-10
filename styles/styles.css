@@ -72,6 +72,7 @@ body {
   .des button:hover {
     background: transparent;
     transition: all ease-in 300ms;
+  
     border-radius: 20px;
     border-style: dashed;
     color: rgb(184, 184, 184);
