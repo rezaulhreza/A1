@@ -52,7 +52,7 @@ body {
    text-align: center;
    letter-spacing: 5px;
    font-size: 50px;
-   padding-top: 65px;
+   padding: 40px;
  }
  /**for web designer developer part*/
  .intro {
@@ -81,7 +81,7 @@ body {
     margin: 10px;
     border-radius: 10px;
     text-shadow: 2px 0 5px rgb(75, 75, 75);
-    padding: 5px;
+    padding: 2px;
     text-decoration: none;
     color: aliceblue;
   }
@@ -92,6 +92,7 @@ body {
 .des a:hover {
 background: transparent;
 transition: all ease-in 100ms;
+outline: none;
   color: white;
     border-radius: 20px;
     border: rgba(255, 153, 0, 0.63) 1px solid;
@@ -127,7 +128,7 @@ text-transform: uppercase;
   height: 80px;
   }
 .navbar {
-  margin: 0 25px 0 0;
+  margin: 0 15px 0 0;
 }
 /****** navbar links and hover.**
 margin and padding set to create gap between each other keeping them away from the edge
@@ -136,9 +137,9 @@ text decoration is set to none for the links
 .navbar a {
   text-decoration: none;
   color: white;
-  margin: 0 12px;
+  margin: 0 10px;
   line-height: 80px;
-  padding: 10px;
+  padding: 5px;
   font-size: 20px;
 }
 /****hover
@@ -181,11 +182,12 @@ grid-area: brdr;
 .social {
 color: white;
 text-align: center;
+padding: 10px;
 }
 /** icon padding set to make gap between them*/
 .social i {
 color: white;
-padding: 20px;  
+padding: 20px;
 }
 /***social icon hover effect*/
 .social i:hover {
@@ -200,11 +202,13 @@ text-align: center;
 color: white;
 padding: 20px;
 }
-/*******  media queries for device screen of maximum 700px , fto fit nicely on smaller screen*/
-  @media only screen and (max-width:700px) {
+/*******  media queries for device screen of minimum 240px maximum 1024px , fto fit nicely on smaller screen*/
+  @media only screen and (min-width:240px) and (max-width:800px) {
 .contnr {
-  display: grid;     
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 0px;
   grid-template-areas:
   "header  header  header"
   "content content content"
@@ -236,7 +240,7 @@ padding: 20px;
 .navbar a {
 clear: right;
 display: block;
-border-bottom: 2px solid darkgrey;
+border-bottom: 1px solid darkgrey;
 margin: 0 100px;
 color: black;
 }
