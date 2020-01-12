@@ -180,7 +180,7 @@ grid-area: brdr;
     /*for social media sites */
 .social {
 color: white;
-text-align: center;    
+text-align: center;
 }
 /** icon padding set to make gap between them*/
 .social i {
@@ -244,6 +244,7 @@ color: black;
 #hamburger:checked + .navbar {
 display: block;
 }
+
 }
   /*************
   for contact page*/
