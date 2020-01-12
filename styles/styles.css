@@ -13,46 +13,62 @@ body {
     font-family: 'Roboto Slab', sans-serif;
   }
   
-  
+  /*****this is for landing page*/
+  .contnr {
+   
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+    "header  header  header"
+    "content content content"
+    "brdr brdr brdr"; 
+}
+/****for content of landing page background is black*/
   .content {
     grid-area: content;
     background: black;
     height: auto;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.233);
   }
+  /***for landing page image*/
  .content-img img {
    display: grid;
    float: right;
    margin: 20px;
    filter: brightness(80%);
    place-items: center;
+   /*****for polygon shape on the img, clipping region is set to polygon.)*/
    clip-path: polygon(10px 250px, 400px 450px, 200px 0, 0 0); 
  }
+ /***landing page image hover effect
+ *when mouse is placed, image shape will change to circle
+ */
  .content-img img:hover {
    filter: grayscale(1);
    transition: all ease-in-out 2s;
-   border: 1px groove white;
    clip-path: circle(40%);
  }
+ /*description  for landing page*/
  .des {
-   
-   
    text-align: center;
    letter-spacing: 5px;
    font-size: 50px;
    padding-top: 65px;
  }
+ /**for web designer developer part*/
  .intro {
    color: white;
    text-shadow: 3px 5px 10px gray, 5px 0 5px red;
    font-size: 30px;
    text-transform: uppercase;
  }
+ /***for hello part*/
  .hello {
    color: #b1b1b1;
    text-shadow:  5px 0 5px blue, 10px 1px 4px green;
    text-transform: uppercase;
  }
+ /***for  my name*/
  .name {
    color: teal;
    text-shadow: 5px 0 5px black, 6px 0 0 gray;
@@ -60,21 +76,24 @@ body {
  }
  /*for button*/
   .des button{
-  
     background-color: transparent;
     font-size: 30px;
     color: white;
     margin: 10px;
     border-radius: 10px;
     text-shadow: 2px 0 5px rgb(75, 75, 75);
-    
     padding: 5px;
   }
+  /***for read more link , hide underline from there*/
   .des a {
     text-decoration: none;
     color: aliceblue;
   }
-  
+  /****button hover effect***
+  *color is white, border is dashed border with a 20px radius
+  *box shadow and text shadow for effects
+  *3 box shadow for 3 dimensional hover effects*/
+ 
   .des button:hover {
     background: transparent;
     transition: all ease-in 100ms;
@@ -85,46 +104,50 @@ body {
     text-shadow: 5px 0 5px rgb(110, 2, 2);
     cursor: pointer;
     box-shadow: 0 0 5px brown, 0 0 20px rgb(0, 0, 75), 0 0 35px red;
-   
   }
-  
+/*for header and navigation
+**all text will be uppercase*/
   .header {
     grid-area: header;
     background: var(--header);
     padding: 0 20px;
     color: white;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
 }
-
-    .title {
-      float: left;
-      color: white;
-      
-      padding: 0 15px;    
+/****for the title on the left*/
+.title {
+    float: left;
+    color: white;  
+    padding: 0 15px;    
     }
-    /***for navigation bar with the hamburger*/
-    .navigation {
-      border-bottom: 1px dotted rgba(255, 255, 255, 0.233);
-      text-align: right;
-      line-height: 80px;
-      height: 80px;
+    /***for navigation bar with the hamburger**
+    *text is aligned right to show on the right hand side of the page
+    *line height is 80xpx to be on same level as header
+    ****/
+.navigation {
+  text-align: right;
+  line-height: 80px;
+  height: 80px;
   }
-  .navbar {
-    margin: 0 25px 0 0;
+.navbar {
+  margin: 0 25px 0 0;
 }
-ul {
-  overflow: hidden;
-}
-
+/****** navbar links and hover.**
+margin and padding set to create gap between each other keeping them away from the edge
+text decoration is set to none for the links
+***/
 .navbar a {
   text-decoration: none;
   color: white;
   margin: 0 12px;
   line-height: 80px;
- 
+  padding: 10px;
   font-size: 20px;
 }
+/****hover
+color is green with a dashed border with 10px radius and text shadpw to create effects*/
+
 .navbar a:hover {
   color: green;
   transition: all ease-in-out 300ms ;
@@ -132,107 +155,93 @@ ul {
   border-radius: 10px;
   text-shadow: 20px 3px 7px white;
 }
+/***all active pages name will be displayed in red color*/
 .navbar .active {
   color: red;
 }
-
+/*****label for navigation bar will not display as i need that on mobile phone*/
 label {
   margin: 0 35px 0 0;
   font-size: 20px;
   line-height: 80px;
   display: none;
 }
-
+/***id of the icon for navigation bar*/
 #hamburger {
   display: none;
 }
+
 #hamburger:hover {
   color: #ff6b6c;
 }
+/**nav bar end*/
 
-
+/***page footer area*/
     .brdr {
       background: var(--footer);  
       grid-area: brdr;
     }
-   
+    /*for social media sites */
     .social {
-      grid-area: social;
       color: white;
-     text-align: center;
-     
+     text-align: center;    
     }
+    /** icon padding set to make gap between them*/
     .social i {
       color: white;
       padding: 20px;
      
     }
+    /***social icon hover effect*/
     .social i:hover {
       color: rgba(212, 219, 255, 0.63);
       transition: all ease-in-out 1s;
       
     }
 
-  
+  /***footer area is here*/
   .footer {
-    grid-area: footer;
-    
     text-align: center;
     color: white;
     padding: 20px;
    
     
   }
-  
-  
-  .contnr {
-   
-          display: grid;
-          height: 100vh;
-      
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-areas:
-          "header  header  header"
-          "content content content"
-          "brdr brdr brdr";
-          
-      }
-  
-  
+  /*******
+  media queries for device screen of maximum 700px , fto fit nicely on smaller screen*/
   @media only screen and (max-width:700px) {
-    
 
-    
-      .contnr {
-        display: grid;
-       
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-areas:
-          "header  header  header"
-          "content content content"
-          "brdr brdr brdr"
-          
-          
-        }
-        label {
-          display: block;
-          cursor: pointer;
-          width: 15px;
-          float: right;
-      }
+.contnr {
+  display: grid;     
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "header  header  header"
+  "content content content"
+  "brdr brdr brdr";         
+ }
+ /*for the navigation bar input next to label will be shown in block*/
+  label {
+  display: block;
+  cursor: pointer;
+  width: 15px;
+  float: right;
+}
+/*** on the targeted screen, height of the navigation bar will be set auto*/
 .navigation {
   height: auto;
 }
+/*** header padding is 0 on screen size less than 700px*/
 .header {
   padding: 0; 
 }
-
-      .navbar {
-          text-align: center;
-          width: 100%;
-          background: rgb(197, 197, 197);
-          display: none;
-      }
+/*** the will display in center as text is aligned centered and will not display anything apart from the eclips icon*/
+.navbar {
+  text-align: center;
+  width: 100%;
+  background: rgb(197, 197, 197);
+  display: none;
+}
+/***all the links in navigation bar will display in block and there will be a solid line in bottom.*/
       .navbar a {
           clear: right;
           display: block;
@@ -240,6 +249,7 @@ label {
          margin: 0 100px;
           color: black;
       }
+      /***when icon is clicked checbox is checked and navbar will display*/
       #hamburger:checked + .navbar {
           display: block;
       }
@@ -248,6 +258,8 @@ label {
 
   /*************
   for contact page*/
+  /***structure of the main page*
+  */
   .contact-container {
     
    
@@ -262,18 +274,8 @@ label {
   }
 
 
-  .about {
-    grid-area: about;
-    background: #ff6b6c;
-    padding: 50px 0;
-    font-family: "Roboto Slab", sans-serif;
-    border: 1px solid gray;
-    color: white;
-    text-align: center;
-  }
-
-  
-
+/*****for contact details area 
+*/
   .contact-area {
     background-color: #ffee58;
     grid-area: contact;
@@ -282,6 +284,10 @@ label {
     
     
   }
+  /***contact-area h1
+  **h1 is centered with solid border at the bottom
+  *all h1 here will be capitalized 
+  */
 
   .contact-area h1 {
     text-align: center;
@@ -290,13 +296,20 @@ label {
     margin: 70px;
     text-transform: capitalize; 
   }
+  /***for the form
+*form width is maximum 700px with a auto margin and 15px top padding.
+*/
   .field {
     max-width: 700px;
     margin: auto;
     padding: 0 15px;
     overflow: hidden;
   }
-  .field-text {
+  /*for all the text input within the form*
+*with a margin 30px on left and as outline is disabled for the edges
+  */
+
+.field-text {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -309,18 +322,25 @@ label {
     background: rgba(17, 17, 17, 0.808);
     
   }
+  /**hover for the input area
+  *when clicked border-radius will change to 20px and box shadow is for effects
+  */
   
   .field-text:hover {
     border-radius: 20px;
     box-shadow: 10px 0 0 rgba(128, 128, 128, 0.205), 0 0 0 15px rgba(68, 255, 109, 0.205), 0 0 25px rgb(255, 0, 0);
   }
+  /**when clicked red color will appear in the background to focus on the input area*/
  .field-text:focus {
    background-color: rgba(255, 5, 5, 0.699);
  }
+ /*for text area(leave ur message)
+ *no resizing with a height of 150px*/
  .textarea.field-text {
   resize: none;
   height: 150px;
 }
+/***for input type-submit area*/
  .contact-btn {
 float: right;
 background-color: rgba(17, 17, 17, 0.808);
@@ -332,6 +352,7 @@ border-radius: 20px;
 text-shadow: 0px 0 5px white;
 outline: none;
 }
+/**hover for the submit*/
 .contact-btn:hover {
 background: rgba(128, 128, 128, 0.582);
 transition: all ease-in 150ms;
@@ -341,31 +362,30 @@ cursor: pointer;
 box-shadow: 5px 0 0 rgba(128, 128, 128, 0.486), 0 0 15px rgba(90, 255, 68, 0.308), 0 0 25px rgb(247, 0, 255);
 transition-delay: .1s;
 }
-
+/****contact details like email tel etc*/
 .contact-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 }
+/**h4 of contact details*/
 .contact-details h4 {
   border-radius: 80px;
- 
   text-align: center;
-    border-bottom:  4px solid #6e6e6e5d;
-    border-radius: 200px;
+  border-bottom:  4px solid #6e6e6e5d;
+  border-radius: 200px;
     
 
 }
+/*for the icons to have a gap between them and the etxt after that*/
 .contact-details i {
   padding: 10px;
-}
-
-
-
-  
+}  
   /******for cv page*/
-  
+
+
+  /***main structure*/
   .cv-container {
   
       display: grid;
@@ -376,6 +396,10 @@ transition-delay: .1s;
       "edu details details"
       "brdr brdr brdr";
   }
+  .edu {
+    grid-area: edu;
+  }
+  /***for cv sidepart where about is located*/
   .cv-side {
     text-transform: capitalize;
     grid-area: edu;
@@ -383,214 +407,196 @@ transition-delay: .1s;
     background-color: rgba(169, 169, 169, 0.116);
     padding: 20px;
     height: 100%;
-  
-  margin: 5px;
-  text-align: center;
+    margin: 5px;
+    text-align: center;
   
   }
+  /*for side icons*/
   .cv-side i {
     padding: 10px;
   }
+  /*h1, contact, about*/
   .cv-side h1, .cv-contact, .cv-about {
   border-bottom: 1px gray dotted;
-  
   }
   .cv-contact, .cv-about {
     text-transform: none;
   }
+  /*side img to show circle shape*
+  *clipping region is circle,
+  */
   .cv-side img {
     clip-path: circle(40%)
   }
+  /*hover for side*/
   .cv-side img:hover {
     filter: grayscale(1);
     transition: all ease-in 300ms;
   }
-  
-  
- 
+  /*for side paragraph tag*/
   .cv-side p {
     font-family: 'Montserrat', sans-serif;
   }
-  
+  /****details part
+  */
+/*****************
+*for tthe cv details where all the informations are
+*font-family is set to Montserrat as a modern font.
+*/
 .details {
   margin: 5px;
-  
   height: 100%;
   grid-column: span 2;
   font-family: 'Montserrat', sans-serif;
- 
   padding: 20px;
   border-radius: 20px;
-  text-transform: capitalize;
-  
-  
-  
+  text-transform: capitalize; 
 }
+
+/*** for the title of informatiion like for name education etc*/
 .details .info  {
   box-shadow: 2px 1px 4px black;
-  
   background-color: rgba(163, 163, 163, 0.171);
-
   font-size: 20px;
-  
-  color: black;
   border-radius: 10px;
-  
- 
 }
+/*icon on this area*/
 .details i {
   padding: 10px;
+  color: rgb(72, 83, 95);
 }
+/*for paragraph text on this area*/
 .details  p {
-  
   background: rgba(207, 207, 207, 0.192);
   color: rgb(41, 39, 39);
   padding: 20px;
   font-size: 10px;
-
 }
+/***for all the links in details area*
+cursor is set to pointer which is good for links
+*/
 .details a {
- 
   text-decoration: none;
   font-style: italic;
   text-transform: none;
   cursor: pointer;
 }
-
+/**a sub div within details for the skills using flex direction row*/
 .skills {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between;/***for equal space between them*/
 }
+/**for paragraph text within skills*/
 .skills p {
-    
-  
   color: rgb(41, 39, 39);
   padding: 10px;
   font-size: 10px;
 }
-
-
+/**on the side area showing html java css skills percentage 
+*giving a circle shape with border-radius and yellow border
+*/
 .bar {
-  height: 20px;
-  margin: 0 auto 7px;
-  line-height: 20px;
-  font-size: 15px;
- 
-  color: rgba(27, 27, 26, 0.986);
-
- border-radius: 100px;
- height: 40px;
- 
-}
-.bar1 {
-  background-color: lightblue;
-  
-}
-.bar2 {
-  background-color: rgb(255, 47, 238);
-
-
-  
-}
-.bar3 {
-  background-color: rgb(38, 117, 143);
-  
-  
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid #ffee04;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: "Monteserrat", sans-serif;
+  font-weight: bolder;
+  text-align: center;
 }
 
+/**for refrences on CV*/
 .details .refer {
   text-transform: none;
 }
-
-
-
-
+/****media queries for smaller screen no more than 700px
+*/
 @media  screen and (max-width: 700px) {
+  /*for images within cv-container*/
   .cv-container img {
     width: 250px;
     height: 320px;
   }
+  /*all items within the container is set to flex direction column*/
+  /**all items will show in flex-column direction*/
   .cv-container {
     display: flex;
     flex-direction: column;
-  }
-  .education {
-    border-bottom: 1px solid gray;
-    border-right: none;
-    border-radius: 5px;
   }
   .cv-side {
     border-right: none;
     border-bottom: dotted;
   }
-  .skills {
-    
+  /**for cv skills*/
+  .skills { 
     flex-direction: column;
   }
 }
 
 
 /****for portfolio page*/
+/*****portfolio page structure
+*grid layout with area
 
+*/
 .ptfl-container {
   display: grid;
   height: 100vh;
-grid-gap: 2px;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas: 
   "header header header"
   "gallery gallery gallery"
-  
   "brdr brdr brdr"
-
-  
   ;
-
 }
+/***all images width and height is set*/
 
 .ptfl-container img {
-  width: 380px;
-  height: 350px;
+  width: 320px;
+  height: 280px;
 }
-
+/****main gallery area*/
 .gallery {
   grid-area: gallery;
   margin: 5px;
   padding: 10px;
- 
-  background-color: #bad8d838;
-  
+  background-color: #bad8d838; 
 }
+/**h2 for gallery area*/
 .gallery h2 {
   text-align: center;
   border-bottom: 1px solid gray;
 }
+/**for all images on gallery area*/
 .gallery img {
   border-radius: 10px;
   filter: grayscale(1);
 }
+/**hover for gallery image*/
 .gallery img:hover {
   filter: brightness(100%) drop-shadow(10px 5px 5px rgba(54, 53, 53, 0.356));
 }
+/**direction and margin*/
+/**first row */
 .g1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin: 10px;
-  
 }
-
+/*second row*/
 .g2 {
  display: flex;
  flex-direction: row;
  justify-content: space-between;
  flex-wrap: nowrap;
  margin: 10px;
- 
 }
-
+/*3rd row*/
 .g3 {
  display: flex;
  justify-content: space-between;
@@ -598,23 +604,28 @@ grid-gap: 2px;
  flex-wrap: nowrap;
  margin: 10px;
 }
-/*fro mobile*/
+/*for mobile screen from 240px to 550px*/
 @media only screen and (min-device-width: 240px) and (max-device-width: 550px){
+  /**margin*/
   .gallery {
     margin: 5px auto auto auto;
   }
+  /*all gallery image*/
   .gallery img {
     width: 280px;
     height: 260px;
     padding: 5px;
   }
+  /*first row*/
   .g1 {
     flex-direction: column;
 
   }
+  /*2nd row*/
   .g2 {
     flex-direction: column;
   }
+  /*3rd row*/
   .g3 {
     flex-direction: column;
   }
@@ -625,31 +636,28 @@ grid-gap: 2px;
   }
   
 }
-  /***for tablet*/
-@media only screen and (min-device-width: 551px) and (max-device-width: 1280px){
+  /***for screen like tablet etc*/
+@media only screen and (min-device-width: 550.5px) and (max-device-width: 1280px){
   .ptfl-container {
     grid-template-columns: none;
-    height: 100vh;
+    height: 100%;
     grid-template-areas: "header header header"
     "gallery gallery gallery"
     "brdr brdr brdr"
     
   }
+  /*social class paddinng and margin*/
   .social {
     padding: 0;
     margin: 0;
   }
-  .gallery {
-  
-  }
-  
+  /*gallery all images*/
   .gallery img {
     width: 280px;
     height: 250px;
-    padding: 2px;
-
-    
+    padding: 2px;  
   }
+  /*g1,g2,g3 row direction*/
   .g1 {
     flex-direction: row;
 
@@ -662,10 +670,12 @@ grid-gap: 2px;
   }
   .g1, .g2, .g3 {
     margin: 1px;
-
   }
   
 }
+/***********************************************************
+***more stuff coming on term 2, hopefully!
+*/
 
 
 

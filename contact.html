@@ -6,74 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Me</title>
     <link rel="stylesheet" href="styles/styles.css">
-    
     <script src="https://kit.fontawesome.com/9118ec84d8.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="contact-container">
-        <div class="header">
-           <h2 class="title">Rezaul H Reza</h2>
-           <div class="navigation">
-             <label for="hamburger"><i class="fas fa-ellipsis-v fa-2x"></i></label>
-             <input type="checkbox" id="hamburger">
-             <div class="navbar">
-               <a href="index.html">Home</a>
-               <a href="portfolio.html">Portfolio</a>
-               <a href=cv.html>CV</a>
-               <a href="contact.html"><span class="active">Contact</span></a>
-             </div>
-           </div>
-        </div>
-
-        <div class="contact-area">
-          
-          <h1>Contact me for business enquiries</h1>
-          <div class="contact-details">
+  <!--contact page starts-->
+<div class="contact-container">
+<div class="header">
+<h1 class="title">Rezaul H Reza</h1>
+<div class="navigation">
+<label for="hamburger"><i class="fas fa-ellipsis-v fa-2x"></i></label>
+<input type="checkbox" id="hamburger">
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="portfolio.html">Portfolio</a>
+<a href=cv.html>CV</a>
+<!--active page-->
+<a href="contact.html"><span class="active">Contact</span></a>
+</div>
+</div>
+</div>
+<!--contact-area starts here-->
+<div class="contact-area">          
+<h1>Contact me for business enquiries</h1>
+<!--contact details-->
+<div class="contact-details">
+            <!--email-->
             <div class="email">
               <h4><i class="fas fa-envelope-square"></i>Email</h4>
-              
               <p>emailrezahere@gmail.com</p>
             </div>
-            
+            <!--phone-->
             <div class="phone">
               <h4><i class="fas fa-phone-square-alt"></i>Mobile</h4>
               <p>+447960095662</p>
-
             </div>
-            
           </div>
-          
-
+          <!--contact form
+            *text-area is for the message
+            *action is index.html, when clicked on submit it will take to landing page.
+            if i use post method it will post the message to server.
+            *github does not allow it so i showed how to do it*/
+          -->
           <form action="index.html" class="field">
               <input type="text" class="field-text" placeholder="Enter Your Name">
               <input type="email" class="field-text" placeholder="Email">
               <input type="text" class="field-text" placeholder="Contact Number">
               <textarea class="field-text" placeholder="Leave your message here"></textarea>
               <input type="submit" class="contact-btn" value="Send Now">
-              
           </form>
         </div>
-        <div class="brdr">
-                 
+        <!--footer-->
+        <div class="brdr">     
           <div class="social">
             <a class="i" href="https://www.facebook.com/thisisreza"><i class="fab fa-facebook fa-2x d-block"></i></a>
 <a href="https://github.com/rezaulhreza"><i class="fab fa-github fa-2x d-block"></i></a>
 <a href="https://www.instagram.com/rezaul.h.reza"><i class="fab fa-instagram fa-2x d-block"></i></a>
-            
-            
-                    
-                          <div class="footer">Designed by <br>
-                            <footer><strong>Rezaul H Reza</strong></footer>
-                         </div>
-                        </div>
-                        </div>
-               
-         
-        
-         
-         
-         
-
+<div class="footer">Designed by <br>
+<footer><strong>Rezaul H Reza</strong></footer>
+</div>
+</div>
+</div>
 </body>
 </html>
