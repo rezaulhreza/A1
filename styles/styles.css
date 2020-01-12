@@ -12,10 +12,9 @@ body {
     padding: 0;
     font-family: 'Roboto Slab', sans-serif;
   }
-  
+
   /*****this is for landing page*/
   .contnr {
-   
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 2fr 1fr;
@@ -72,20 +71,17 @@ body {
  .name {
    color: teal;
    text-shadow: 5px 0 5px black, 6px 0 0 gray;
-   
  }
  /*for button*/
-  .des button{
+  .des a {
     background-color: transparent;
     font-size: 30px;
     color: white;
+    border: 1px solid rgba(139, 9, 31, 0.623);
     margin: 10px;
     border-radius: 10px;
     text-shadow: 2px 0 5px rgb(75, 75, 75);
     padding: 5px;
-  }
-  /***for read more link , hide underline from there*/
-  .des a {
     text-decoration: none;
     color: aliceblue;
   }
@@ -93,13 +89,12 @@ body {
   *color is white, border is dashed border with a 20px radius
   *box shadow and text shadow for effects
   *3 box shadow for 3 dimensional hover effects*/
- 
-  .des button:hover {
-    background: transparent;
-    transition: all ease-in 100ms;
+.des a:hover {
+background: transparent;
+transition: all ease-in 100ms;
   color: white;
     border-radius: 20px;
-    border-style: dashed;
+    border: rgba(255, 153, 0, 0.63) 1px solid;
     color: rgb(184, 184, 184);
     text-shadow: 5px 0 5px rgb(110, 2, 2);
     cursor: pointer;
@@ -107,18 +102,19 @@ body {
   }
 /*for header and navigation
 **all text will be uppercase*/
-  .header {
-    grid-area: header;
-    background: var(--header);
-    padding: 0 20px;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
+.header {
+grid-area: header;
+background: var(--header);
+padding: 0 20px;
+color: white;
+font-family: "Montserrat", sans-serif;
+text-transform: uppercase;
 }
 /****for the title on the left*/
 .title {
     float: left;
-    color: white;  
+    color: rgb(153, 125, 0);
+    text-shadow: 2px 0 0 white;
     padding: 0 15px;    
     }
     /***for navigation bar with the hamburger**
@@ -177,40 +173,35 @@ label {
 /**nav bar end*/
 
 /***page footer area*/
-    .brdr {
-      background: var(--footer);  
-      grid-area: brdr;
+.brdr {
+background: var(--footer);  
+grid-area: brdr;
     }
     /*for social media sites */
-    .social {
-      color: white;
-     text-align: center;    
-    }
-    /** icon padding set to make gap between them*/
-    .social i {
-      color: white;
-      padding: 20px;
-     
-    }
-    /***social icon hover effect*/
-    .social i:hover {
-      color: rgba(212, 219, 255, 0.63);
-      transition: all ease-in-out 1s;
-      
-    }
+.social {
+color: white;
+text-align: center;    
+}
+/** icon padding set to make gap between them*/
+.social i {
+color: white;
+padding: 20px;  
+}
+/***social icon hover effect*/
+.social i:hover {
+color: rgba(212, 219, 255, 0.63);
+transition: all ease-in-out 1s;
 
-  /***footer area is here*/
-  .footer {
-    text-align: center;
-    color: white;
-    padding: 20px;
-   
-    
-  }
-  /*******
-  media queries for device screen of maximum 700px , fto fit nicely on smaller screen*/
+}
+
+/***footer area is here*/
+.footer {
+text-align: center;
+color: white;
+padding: 20px;
+}
+/*******  media queries for device screen of maximum 700px , fto fit nicely on smaller screen*/
   @media only screen and (max-width:700px) {
-
 .contnr {
   display: grid;     
   grid-template-columns: 1fr 1fr 1fr;
@@ -242,32 +233,28 @@ label {
   display: none;
 }
 /***all the links in navigation bar will display in block and there will be a solid line in bottom.*/
-      .navbar a {
-          clear: right;
-          display: block;
-          border-bottom: 2px solid darkgrey;
-         margin: 0 100px;
-          color: black;
-      }
-      /***when icon is clicked checbox is checked and navbar will display*/
-      #hamburger:checked + .navbar {
-          display: block;
-      }
-  }
- 
-
+.navbar a {
+clear: right;
+display: block;
+border-bottom: 2px solid darkgrey;
+margin: 0 100px;
+color: black;
+}
+/***when icon is clicked checbox is checked and navbar will display in block*/
+#hamburger:checked + .navbar {
+display: block;
+}
+}
   /*************
   for contact page*/
   /***structure of the main page*
   */
-  .contact-container {
-    
-   
-      display: grid;
-      height: 100vh;
-  grid-gap: 2px;
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-areas:
+.contact-container {   
+display: grid;
+height: 100vh;
+grid-gap: 2px;
+grid-template-columns: 1fr 2fr 1fr;
+grid-template-areas:
       "header  header  header"
       "contact contact contact"
       "brdr brdr brdr";
