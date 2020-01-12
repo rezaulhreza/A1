@@ -202,7 +202,7 @@ text-align: center;
 color: white;
 padding: 20px;
 }
-/*******  media queries for device screen of minimum 240px maximum 1024px , fto fit nicely on smaller screen*/
+/*******  media queries for device screen of minimum 240px maximum 1024px , to fit nicely on smaller screen and tablet*/
   @media only screen and (min-width:240px) and (max-width:800px) {
 .contnr {
   display: grid;
