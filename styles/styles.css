@@ -593,7 +593,7 @@ cursor is set to pointer which is good for links
  margin: 10px;
 }
 /*for mobile screen from 240px to 550px*/
-@media only screen and (min-device-width: 240px) and (max-device-width: 550px){
+@media only screen and (min-width: 240px) and (max-width: 550px){
   /**margin*/
   .gallery {
     margin: 5px auto auto auto;
