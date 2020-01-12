@@ -625,7 +625,7 @@ cursor is set to pointer which is good for links
   
 }
   /***for screen like tablet etc*/
-@media only screen and (min-device-width: 550.5px) and (max-device-width: 1280px){
+@media only screen and (min-width: 550.5px) and (max-width: 1280px){
   .ptfl-container {
     grid-template-columns: none;
     height: 100%;
