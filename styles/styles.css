@@ -215,6 +215,9 @@ padding: 20px;
   "brdr brdr brdr";         
  }
  /*for the navigation bar input next to label will be shown in block*/
+ .header i {
+  color: rgb(153, 125, 0);
+ }
   label {
   display: block;
   cursor: pointer;
